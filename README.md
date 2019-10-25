@@ -1,22 +1,27 @@
 # renren-flowable
 
-利用renren-fast作为基础，写一些flowable流程引擎的demo
-### 下载 flowable
+利用renren-fast作为基础，结合flowable写一些流程引擎的demo。
+### renren-fast
+```$xslt
+官网：<https://www.renren.io/guide/>
+```
+### flowable
 ````$xslt
-官网：https://www.flowable.org/ 目前版本6.4.2
+官网：https://www.flowable.org/ 
+当前使用版本6.4.2
 ````
 ### flowable用户手册
 ````$xslt
 http://www.shareniu.com/flowable6.5_zh_document/bpm/index.html#springintegration
 
 ````
-### 数据库初始化
+### flowable数据库初始化
 ````$xslt
-使用建表SQL，进行初始化
-MySQL版本5.7.28，低于5.7的版本，建表不会成功
-其他类型数据没有尝试
+使用flowable-6.4.2/database/create/all目录下的建表SQL，进行数据库初始化。
+本项目使用MySQL的版本是5.7.28，低于5.7的版本，建表不会成功。
+其他类型数据库还没有尝试。
 ````
-### 添加maven依赖
+### 添加flowable的maven依赖
 ````$xslt
 <flowable.version>6.4.2</flowable.version>
 
@@ -26,7 +31,7 @@ MySQL版本5.7.28，低于5.7的版本，建表不会成功
   <version>${flowable.version}</version>
 </dependency>
 ````
-### 配置文件 FlowableConfig
+### 配置Flowable
 ```$xslt
 为解决flowable图片中的中文乱码
 io.renren.config.FlowableConfig
