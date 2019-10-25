@@ -40,6 +40,9 @@ PS:如果流程数据库和业务数据库不一样，需要在这里进行指�
 2、
 ```
 ### 相关链接
-* [renren-fast](https://www.renren.io/guide/)
+* [流程引擎历史：activiti与flowable的区别](https://blog.csdn.net/qq_30739519/article/details/82493456)
+* [快速开发平台 renren-fast](https://www.renren.io/guide/)
 * [Spring平台整合activiti工作流引擎实例](https://gitee.com/shenzhanwang/Spring-activiti)
 * [采用springboot+flowable快速实现工作流](https://blog.csdn.net/puhaiyang/article/details/79845248)
+* [流程引擎专家博客：分享牛](http://www.shareniu.com/)
+* [Activiti权威指南一书中的配套代码](https://github.com/qiudaoke/shareniu-activiti)
