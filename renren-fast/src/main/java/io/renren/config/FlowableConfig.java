@@ -1,6 +1,5 @@
 package io.renren.config;
 
-import io.renren.datasource.config.DynamicDataSource;
 import io.renren.datasource.properties.DataSourceProperties;
 import org.flowable.spring.SpringProcessEngineConfiguration;
 import org.flowable.spring.boot.EngineConfigurationConfigurer;
@@ -8,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 为解决flowable图片中的中文乱码
+ *
  *
  * @date 2018/12/19
  */
@@ -19,6 +18,7 @@ public class FlowableConfig implements EngineConfigurationConfigurer<SpringProce
     DataSourceProperties dataSourceProperties;
     @Override
     public void configure(SpringProcessEngineConfiguration engineConfiguration) {
+        //为解决flowable图片中的中文乱码
         engineConfiguration.setActivityFontName("宋体");
         engineConfiguration.setLabelFontName("宋体");
         engineConfiguration.setAnnotationFontName("宋体");
