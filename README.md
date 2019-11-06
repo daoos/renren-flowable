@@ -27,11 +27,15 @@
 ````
 ### 配置Flowable
 ```$xslt
-文件路径：io.renren.config.FlowableConfig
+文件路径：FlowableConfig
 PS:如果流程数据库和业务数据库不一样，需要在这里进行指定。
 但是没有测试过2个数据库分开的情况，现在使用的是一个数据库。
 ```
-
+### 目录
+> resource目录
+> * processes目录下的任何BPMN 2.0流程定义都会被自动部署。
+> * cases目录下的任何CMMN 1.1事例都会被自动部署。
+> * forms目录下的任何Form定义都会被自动部署。
 ### 一些说明
 ```$xslt
 1、本工程没有集成【流程设计器】，可以使用下载的flowable里面的war包启动单独的设计器。

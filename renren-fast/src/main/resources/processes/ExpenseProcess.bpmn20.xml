@@ -17,13 +17,13 @@
         <userTask id="directorTak" name="经理审批">
             <extensionElements>
                 <flowable:taskListener event="create"
-                                       class="com.haiyang.flowablespringboot.handler.ManagerTaskHandler"></flowable:taskListener>
+                                       class="io.renren.modules.flowable.handler.ManagerTaskHandler"></flowable:taskListener>
             </extensionElements>
         </userTask>
         <userTask id="bossTask" name="老板审批">
             <extensionElements>
                 <flowable:taskListener event="create"
-                                       class="com.haiyang.flowablespringboot.handler.BossTaskHandler"></flowable:taskListener>
+                                       class="io.renren.modules.flowable.handler.BossTaskHandler"></flowable:taskListener>
             </extensionElements>
         </userTask>
         <endEvent id="end" name="结束"></endEvent>

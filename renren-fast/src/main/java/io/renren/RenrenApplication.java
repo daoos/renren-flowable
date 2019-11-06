@@ -10,9 +10,11 @@ package io.renren;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
+//@ComponentScan("io.renren.modules.flowable.handler")
 public class RenrenApplication {
 
 	public static void main(String[] args) {
